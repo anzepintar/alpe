@@ -41,18 +41,29 @@
 
                 <form method="get" align="left">
                   <p><small>Ali vam je ta stran všeč?</small></p>
-                  <input type="radio" id="da" name="dane" value="Da" required /><small>Da</small> <input type="radio"
-                    id="ne" name="dane" value="Ne" required /><small>Ne</small><br>
+                  <input type="radio" id="da" name="dane" value="Da" required checked /><small>Da</small> <input
+                    type="radio" id="ne" name="dane" value="Ne" required /><small>Ne</small><br>
 
                   <p><small>Ocenite spletno stran 1 - 5:</small></p>
-                  <input type="radio" id="1" name="1-5" value="1" required /><small>1</small><br>
-                  <input type="radio" id="2" name="1-5" value="2" required /><small>2</small><br>
-                  <input type="radio" id="3" name="1-5" value="3" required /><small>3</small><br>
-                  <input type="radio" id="4" name="1-5" value="4" required /><small>4</small><br>
-
-                  <input type="radio" id="5" name="1-5" value="5" required /><small>5</small>
+                  <select id="ocena" name="ocena" required>
+                    <option value="1">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </option>
+                    <option value="2">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </option>
+                    <option value="3">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </option>
+                    <option value="4">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </option>
+                    <option value="5" selected>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </option>
+                  </select>
                   <br>
-                  <p><small>Na kratko opišite predloge za izboljšavo:</small></p>
+                  <p><small>Na kratko opišite morebitne predloge za izboljšavo:</small></p>
 
                   <textarea cols="21" rows="4" id="predlogi" name="predlogi" placeholder="Izboljšati bi želel..."
                     maxlength="5000" style="resize: vertical"></textarea>
@@ -117,45 +128,50 @@
                       </p>
 
                       <table border="1" cellspacing="0" cellpadding="15" bgcolor="#f8f9fa">
+
                         <tr>
                           <td>
-                            <h4 align="center">Vsebina:</h4>
-                            <ol>
-                              <li><a href="#Geografija">Geografija</a></li>
-                              <ul>
-                                <li><a href="#Zahodne Alpe">Zahodne Alpe</a></li>
-                                <li><a href="#Vzhodne Alpe">Vzhodne Alpe</a></li>
-                                <li>
-                                  <a href="#Najvišji vrhovi Alp">Najvišji vrhovi Alp</a>
-                                </li>
-                                <li>
-                                  <a href="#Porazdelitev alpskih vrhov">Porazdelitev alpskih vrhov</a>
-                                </li>
-                              </ul>
-                              <li><a href="#Geologija">Geologija</a></li>
+                            <details>
+                              <summary align="center">Vsebina</summary>
 
-                              <li><a href="#Ledeniki">Ledeniki</a></li>
-                              <li><a href="#Hidrologija">Hidrologija</a></li>
-                              <li><a href="#Ekologija">Ekologija</a></li>
-                              <ul>
-                                <li><a href="#Rastlinstvo">Rastlinstvo</a></li>
-                                <li><a href="#živalstvo">Živalstvo</a></li>
-                              </ul>
-                              <li><a href="#Tranzitne poti">Tranzitne poti</a></li>
-                              <li><a href="#Zgodovina">Zgodovina</a></li>
-                              <ul>
-                                <li>
-                                  <a href="#Od prazgodovine do Napoleona">Od prazgodovine do Napoleona</a>
-                                </li>
-                                <li><a href="#Razvoj alpinizma">Razvoj alpinizma</a></li>
-                                <li><a href="#Svetovni vojni">Svetovni vojni</a></li>
-                              </ul>
-                              <li><a href="#Plansarstvo">Planšarstvo</a></li>
-                              <li><a href="#Etimologija">Etimologija</a></li>
-                              <li><a href="#Viri">Viri</a></li>
-                            </ol>
+                              <ol>
+                                <li><a href="#Geografija">Geografija</a></li>
+                                <ul>
+                                  <li><a href="#Zahodne Alpe">Zahodne Alpe</a></li>
+                                  <li><a href="#Vzhodne Alpe">Vzhodne Alpe</a></li>
+                                  <li>
+                                    <a href="#Najvišji vrhovi Alp">Najvišji vrhovi Alp</a>
+                                  </li>
+                                  <li>
+                                    <a href="#Porazdelitev alpskih vrhov">Porazdelitev alpskih vrhov</a>
+                                  </li>
+                                </ul>
+                                <li><a href="#Geologija">Geologija</a></li>
+
+                                <li><a href="#Ledeniki">Ledeniki</a></li>
+                                <li><a href="#Hidrologija">Hidrologija</a></li>
+                                <li><a href="#Ekologija">Ekologija</a></li>
+                                <ul>
+                                  <li><a href="#Rastlinstvo">Rastlinstvo</a></li>
+                                  <li><a href="#živalstvo">Živalstvo</a></li>
+                                </ul>
+                                <li><a href="#Tranzitne poti">Tranzitne poti</a></li>
+                                <li><a href="#Zgodovina">Zgodovina</a></li>
+                                <ul>
+                                  <li>
+                                    <a href="#Od prazgodovine do Napoleona">Od prazgodovine do Napoleona</a>
+                                  </li>
+                                  <li><a href="#Razvoj alpinizma">Razvoj alpinizma</a></li>
+                                  <li><a href="#Svetovni vojni">Svetovni vojni</a></li>
+                                </ul>
+                                <li><a href="#Plansarstvo">Planšarstvo</a></li>
+                                <li><a href="#Etimologija">Etimologija</a></li>
+                                <li><a href="#Viri">Viri</a></li>
+                              </ol>
+                            </details>
                           </td>
                         </tr>
+
                       </table>
 
                       <h2 id="Geografija">Geografija</h2>
@@ -672,7 +688,7 @@
                           <td valign="center" width="25%">
                             <table border="1" cellspacing="0">
                               <tr>
-                                <td bgcolor="#F8F9FA" align="center">
+                                <td bgcolor="#F8F9FA" align="center" width="300px">
                                   <a href="https://sl.wikipedia.org/wiki/Alpe#/media/Slika:Alps_geology_map_en.jpg"><img
                                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Alps_geology_map_en.jpg/300px-Alps_geology_map_en.jpg"
                                       border="1" align="center" width="99%" /></a>
@@ -743,7 +759,7 @@
                           <td valign="center" width="25%" align="right">
                             <table border="1" cellspacing="0">
                               <tr>
-                                <td bgcolor="#F8F9FA" align="center">
+                                <td bgcolor="#F8F9FA" align="center" width="300px">
                                   <a href="https://sl.wikipedia.org/wiki/Alpe#/media/Slika:Tagliamento_da_Aonedis.JPG"><img
                                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Tagliamento_da_Aonedis.JPG/300px-Tagliamento_da_Aonedis.JPG"
                                       border="1" align="center" width="99%" /></a>
@@ -768,7 +784,7 @@
                           <td valign="center" width="25%">
                             <table border="1" cellspacing="0">
                               <tr>
-                                <td bgcolor="#F8F9FA" align="center">
+                                <td bgcolor="#F8F9FA" align="center" width="300px">
                                   <a href="https://sl.wikipedia.org/wiki/Alpe#/media/Slika:LeontopodiumAlpinum-3.jpg">
                                     <img
                                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/LeontopodiumAlpinum-3.jpg/300px-LeontopodiumAlpinum-3.jpg"
@@ -828,7 +844,7 @@
                           <td valign="center" align="right" width="25%">
                             <table border="1" cellspacing="0">
                               <tr>
-                                <td bgcolor="#F8F9FA" align="center">
+                                <td bgcolor="#F8F9FA" align="center" width="300px">
                                   <a href="https://sl.wikipedia.org/wiki/Alpe#/media/Slika:AlpineIbex.jpg"><img
                                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/AlpineIbex.jpg/300px-AlpineIbex.jpg"
                                       border="1" align="center" width="99%" /></a>
@@ -850,7 +866,7 @@
                           <td valign="center" width="25%">
                             <table border="1" cellspacing="0">
                               <tr>
-                                <td bgcolor="#F8F9FA" align="center">
+                                <td bgcolor="#F8F9FA" align="center" width="300px">
                                   <a
                                     href="https://sl.wikipedia.org/wiki/Alpe#/media/Slika:Andermatt-Teufelsbruecke.jpg"><img
                                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Andermatt-Teufelsbruecke.jpg/300px-Andermatt-Teufelsbruecke.jpg"
@@ -1020,7 +1036,7 @@
                           <td valign="center" width="25%" align="right">
                             <table border="1" cellspacing="0">
                               <tr>
-                                <td bgcolor="#F8F9FA" align="center">
+                                <td bgcolor="#F8F9FA" align="center" width="300px">
                                   <a
                                     href="https://sl.wikipedia.org/wiki/Alpe#/media/Slika:Suvorov_crossing_the_alps.jpg"><img
                                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Suvorov_crossing_the_alps.jpg/300px-Suvorov_crossing_the_alps.jpg"
@@ -1197,6 +1213,12 @@
                                   <li>
                                     <p>Shoumatoff (2001), 104</p>
                                   </li>
+                                  <li>
+                                    <p>Shoumatoff (2001), 102-103</p>
+                                  </li>
+                                  <li>
+                                    <p>Shoumatoff (2001), 97-98</p>
+                                  </li>
                                 </ul>
                               </small>
                             </i>
@@ -1206,12 +1228,7 @@
                             <i>
                               <small>
                                 <ul>
-                                  <li>
-                                    <p>Shoumatoff (2001), 102-103</p>
-                                  </li>
-                                  <li>
-                                    <p>Shoumatoff (2001), 97-98</p>
-                                  </li>
+
                                   <li>
                                     <p>Shoumatoff (2001), 91</p>
                                   </li>
